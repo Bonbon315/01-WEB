@@ -1,1 +1,17 @@
 /* 아래에 CSS를 작성해주세요. */
+.card {
+  padding: 0;
+  width: 300px;
+  line-height: 40%;
+}
+
+.card img{
+  width: 295px;
+  height: 295px;
+  border-radius: 5px;
+}
+
+.card p{
+  margin-left: 10px;
+  font-size: 13px;
+}

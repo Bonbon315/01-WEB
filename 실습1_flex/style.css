@@ -1,1 +1,39 @@
 /* 아래에 CSS를 작성해주세요. */
+h2 {
+  margin: 60px;
+  text-align: center;
+}
+
+.flex-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  width: 900px;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.card img{
+  width: 285px;
+  height: 285px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  border-radius: 15px;
+}
+
+.card p{
+  padding-top: 0;
+  padding-left: 10px;
+  color: gray;
+  font-size: 12px;
+}

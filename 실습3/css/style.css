@@ -5,3 +5,148 @@ body {
   min-width: 1280px;
   color: #333333;
 }
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin:0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+header {
+  position:sticky;
+  width:100%;
+  top:0;
+  left:0;
+  background:white;
+}
+header h1 {
+  width:11.875rem;
+  padding:0.75rem;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display:flex;
+  text-align: center;
+}
+header nav ul li {
+  padding: 0 10px;
+  width: 100px;
+}
+header nav ul li a {
+  position:relative;
+  display:inline-block;
+  line-height:4rem;
+}
+header nav ul li a:hover {
+  color:aqua;
+}
+
+.banner {
+  background-image: url("../assets/apparel.jpeg");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 1280px;
+  justify-content:center;
+  margin: auto;
+}
+.main h2{
+  text-align: center;
+  font-size: 26px;
+  margin-top: 2rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  padding-top: 2rem;
+}
+.about img {
+  width: 500px;
+  border-radius: 15px;
+}
+.about div{
+  flex-direction: column;
+  width: 500px;
+  margin-left: 20px;
+}
+.about div h2{
+  text-align: center;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.about div p{
+  font-size: large;
+  line-height: 1.5;
+}
+
+.more {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.more div{
+  flex-direction: column;
+  text-align: center;
+}
+.more div img{
+  justify-content: space-around;
+  width: 64px;
+  height: 64px;
+}
+.more div p{
+  text-align: center;
+  font-size: small;
+  margin-top: 0.5rem;
+}
+
+.cards {
+  display: flex;
+  width: 1280px;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 5px;
+  overflow: hidden;
+}
+.card img{
+  padding: 5px;
+}
+.card h2{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.card p{
+  padding-left: 5px;
+}

@@ -181,7 +181,7 @@ continue, continue [label] 위와 같은 룰.
 
 ## 함수
 
-파이썬과 크게 다를 바 없다
+파이썬과 크게 다를 바 없다. 반복해서 사용해야 하는 코드에 주로 사용하게 된다.
 
 ```javascript
 function myFunc(theObject) {
@@ -247,3 +247,68 @@ y = mycar.make; // y 의 값은 "Toyota" 입니다.
 [`unescape()` (en-US)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/unescape) Deprecated
 
 곧 사라질 **`unescape()`** 메소드는 문자열에서 확장 비트열이 확장 비트열이 나타내는 문자로 바뀌어진 문자열로 계산합니다. [`escape` (en-US)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/escape)에서 확장 비트열이 소개될 것입니다. `unescape()` 메소드가 곧 사라지기 때문에, [`decodeURI()`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/decodeURI) or [`decodeURIComponent`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) 를 대신 사용하세요.
+
+### 화살표 함수
+
+```js
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+console.log(materials.map(material => material.length));
+// expected output: Array [8, 6, 7, 9]
+```
+
+전통적인 함수의 간편한 대안. 
+
+## 객체
+
+객체는 관련된 데이터와 함수(일반적으로 여러 데이터와 함수로 이루어지는데, 객체 안에 있을 때는 보통 프로퍼티와 메소드라고 부릅니다)의 집합입니다. 
+
+```js
+const person = {
+  name: ['Bob', 'Smith'],
+  age: 32,
+  gender: 'male',
+  interests: ['music', 'skiing'],
+  bio: function() {
+    alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+  },
+  greeting: function() {
+    alert('Hi! I\'m ' + this.name[0] + '.');
+  }
+};
+```
+
+## JSON
+
+객체의 문법을 따르는 문자열. 메서드등은 포함되지 않는 순수한 데이터 포멧이다. 대충 javascript용 db라고 생각하면 될듯.
+
+```json
+[
+  {
+    "name": "Molecule Man",
+    "age": 29,
+    "secretIdentity": "Dan Jukes",
+    "powers": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ]
+  },
+  {
+    "name": "Madame Uppercut",
+    "age": 39,
+    "secretIdentity": "Jane Wilson",
+    "powers": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ]
+  }
+]
+```
+

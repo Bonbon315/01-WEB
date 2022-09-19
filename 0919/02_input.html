@@ -8,6 +8,7 @@
 </head>
 <body>
   <input type="text" id="text-input">
+  <div id="result"></div>
   <script>
     // 1. input 선택
     const textInput = document.querySelector('#text-input')
@@ -19,6 +20,7 @@
       console.log(e.target.value)
 
       // 3. 그대로 출력하기
+      document.getElementById("result").innerText = e.target.value
     })
 
   </script>
